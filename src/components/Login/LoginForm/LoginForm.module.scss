@@ -1,0 +1,41 @@
+.LoginForm {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+        font-family: inherit;
+        font-size: 1.6rem;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+        padding: .7rem .8rem;
+        transition: box-shadow .2s ease;
+
+        &:focus {
+            box-shadow: 0 0 0 3px #dcd3ff;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__btn {
+        align-self: flex-start;
+        border: 0;
+        padding: 1rem 2rem;
+        background-color: #7768b1;
+        color: #fff;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    }
+}

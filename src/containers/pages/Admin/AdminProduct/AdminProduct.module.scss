@@ -1,0 +1,23 @@
+.AdminProduct {
+    padding: 1rem;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__btn {
+        border: 1px solid #ababab;
+        align-self: flex-end;
+        padding: 1rem 2rem;
+        cursor: pointer;
+
+        &:active {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}

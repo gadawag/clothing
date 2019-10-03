@@ -1,0 +1,12 @@
+.CategoryProduct {
+
+    &__title {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,44 @@
+.AdminLayout {
+    display: flex;
+
+    &__nav {
+        flex: 0 0 25%;
+        display: flex;
+    }
+
+    &__list {
+        list-style-type: none;
+        background-color: #2d3c50;
+        flex: 1;
+    }
+
+    &__link {
+        display: block;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+
+        &.active {
+            background-color: #7768b1;
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        text-align: left;
+        font-family: inherit;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &__content {
+        flex: 1;
+    }
+}

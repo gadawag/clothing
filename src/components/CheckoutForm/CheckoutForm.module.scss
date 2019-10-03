@@ -1,0 +1,43 @@
+.CheckoutForm {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    margin-top: 2rem;
+
+    &__btn {
+        cursor: pointer;
+        border: none;
+        background-color: #8e7dd0;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        color: #fff;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    }
+}
+  
+.CheckoutForm--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.CheckoutForm--invalid {
+    border-color: #fa755a;
+}
+
+.CheckoutForm--webkit-autofill {
+    background-color: #fefde5 !important;
+}

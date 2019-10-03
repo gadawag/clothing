@@ -1,0 +1,68 @@
+.ProductContent {
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    & thead {
+        background-image: linear-gradient(45deg, #7768b1, #8e8fde, #7a6db7);
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        & tr th {
+            padding: 1rem .4rem;
+
+            &:first-child {
+                border-top-left-radius: 5px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+            }
+        }
+    }
+
+    & img {
+        max-height: 10rem;
+        width: auto;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    & tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+
+    & tbody tr td {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+
+        &:nth-child(3) {
+            text-align: center;
+        }
+
+        & button {
+            border: none;
+            padding: .5rem 1rem;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all .2s ease;
+    
+            &:hover {
+                transform: translateY(-1px);
+                box-shadow: 0px 3px 4px #ccc;
+            }
+    
+            &:nth-child(1) {
+                background-color: #007bff;
+                color: #fff;
+                margin-right: 2px;
+            }
+
+            &:nth-child(2) {
+                background-color: #ea2121;
+                color: #fff;
+            }
+        }
+    }
+}

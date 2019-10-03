@@ -1,0 +1,19 @@
+.Header {
+    display: flex;
+    background-color: #8e7dd0;
+
+    &__banner {
+        height: 8rem;
+        width: 12rem;
+        padding: .5rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;   
+    }
+
+    &__title {
+        align-self: center;
+    }
+}

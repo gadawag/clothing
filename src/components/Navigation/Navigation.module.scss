@@ -1,0 +1,39 @@
+.Nav {
+    display: flex;
+    margin-left: auto;
+    
+    &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        font-family: inherit;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 0 3rem;
+        background-color: #8e7dd0;
+        border: none;
+        cursor: pointer;
+
+        &.active {
+            background-color: #7768b1;
+        }
+    }
+
+    &__link:focus {
+        outline: none;
+    }
+}
