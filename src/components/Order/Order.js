@@ -48,8 +48,6 @@ class Order extends React.Component {
                     loading: false
                 });
             }
-
-            console.log(response);
         } catch (e) {
             // Show server validation error
             if (e.response) {
